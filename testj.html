@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Form</title>
+    <script>
+        // This function will take a prefix and display it along with the name entered
+        function speak(prefix) {
+            // Get the value of the name input field
+            let name = document.getElementById("nameInput").value;
+            // Show an alert with the prefix and the name
+            alert(prefix + " " + name);
+        }
+    </script>
+</head>
+<body>
+    <!-- Form with input box and buttons -->
+    <form>
+        <!-- Input box for user's name -->
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" name="nameInput" placeholder="Enter your name">
+
+        <!-- Buttons with event handlers that call the speak function -->
+        <button type="button" onclick="speak('Hello')">Hello</button>
+        <button type="button" onclick="speak('Good Bye')">Good Bye</button>
+        <button type="button" onclick="speak('Greetings')">Greetings</button>
+    </form>
+</body>
+</html>
